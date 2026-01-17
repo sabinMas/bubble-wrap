@@ -26,10 +26,12 @@ int main()
     // // bn::sprite_ptr myCircle9 = bn::sprite_items::dot.create_sprite(55, -55);
     // // bn::sprite_ptr myCircle10 = bn::sprite_items::dot.create_sprite(55, -55);
     // // bn::sprite_ptr myCircle11 = bn::sprite_items::dot.create_sprite(55, -55);
-    for (int x = -40; x <= 40; x += 10)
+
+    // trying to store vector in a vertical fashion instead of horizontal
+    for (int y = -40; y <= 40; y += 10)
     {
-        BN_LOG("x value", x);
-        bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, 40);
+        BN_LOG("y value", y);
+        bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(0, y);
         circles.push_back(myCircle);
     }
 
