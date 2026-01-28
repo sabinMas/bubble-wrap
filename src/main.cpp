@@ -34,6 +34,12 @@ int main()
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(0, y);
         circles.push_back(myCircle);
     }
+    circles[0].set_horizontal_scale(2.9);
+    circles[0].set_shear(1.3);
+    circles[4].set_vertical_scale(1.9);
+    circles[4].set_shear(2.1);
+    circles[6].set_horizontal_scale(.3);
+    circles[8].set_shear(.8);
 
     // trying to make it so when a button is held it shows the color instead of pressed
     while (true)
